@@ -366,7 +366,7 @@
             $('.slider').slider();
 
             $.ajax({
-              url:'https://raw.githubusercontent.com/Spartanizer/Spartanizer/master/resources/workouts/simple2.json',
+              url:'resources/workouts/simple2.json',
               complete: function (response) {
                 if (response.responseText){
                     console.log("got a response! "); 
