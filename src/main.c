@@ -11,6 +11,8 @@ static Window *window;
 static TextLayer *text_layer;
 static AppTimer *timer;
 static MenuLayer *menu_layer;
+static BitmapLayer *image_layer;
+static GBitmap *image;
   
 #define NUM_MENU_SECTIONS 1
 int NUM_FIRST_MENU_ITEMS = 0 ; //# of workout saved by user (Key 1 on internal storage) // Set on main 
@@ -234,6 +236,15 @@ void createTimer(char* name, char* time) {  //Creates Timer window
     text_layer_set_font(title_text, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
     text_layer_set_text_alignment(title_text, GTextAlignmentCenter);
     layer_add_child(timer_window_layer, text_layer_get_layer(title_text));
+
+    // This needs to be deinited on app exit which is when the event loop ends
+    GBitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_HKSKIP);
+
+    // The bitmap layer holds the image for display
+    image_layer = bitmap_layer_create(GRect(0, 10, bounds.size.w /* width */, 28 /* height */));
+    bitmap_layer_set_bitmap(image_layer, GBitmap);
+    bitmap_layer_set_alignment(image_layer, GAlignCenter);
+    layer_add_child(timer_window_layer, bitmap_layer_get_layer(image_layer));
   
     timer_text = text_layer_create(GRect(0, 60, bounds.size.w /* width */, 30 /* height */));
     text_layer_set_text(timer_text, "");
