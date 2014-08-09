@@ -9,16 +9,36 @@
     "resources": {
         "media": [
             {
+                "file": "images/menuicon.png",
+                "menuIcon": true,
+                "name": "MENU_ICON",
+                "type": "png"
+            },
+            {
                 "file": "images/hkskip.png",
                 "name": "IMAGE_HKSKIP",
                 "type": "png"
             },
             {
-                "file": "images/menuicon.png",
-                "menuIcon": true,
-                "name": "MENU_ICON",
+                "file": "images/squattstretch.png",
+                "name": "IMAGE_SQUATTSTRETCH",
                 "type": "png"
-            }
+            },
+            {
+                "file": "images/standquadstretch.png",
+                "name": "IMAGE_STANDQUADSTRETCH",
+                "type": "png"
+            },
+            {
+                "file": "images/trailrun.png",
+                "name": "IMAGE_TRAILRUN",
+                "type": "png"
+            },
+            {
+                "file": "images/utsprint.png",
+                "name": "IMAGE_UTSPRINT",
+                "type": "png"
+            },
         ]
     },
     "shortName": "Spartanizer",
