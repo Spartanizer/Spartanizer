@@ -1,0 +1,218 @@
+{
+  "categories": [
+    {
+      "name": "Sprint WOD",
+      "workouts": [
+        {
+          "title": "Aug 8 Sprint",
+          "duration": "20 min",
+          "equipment": "You may want to carry a sandbag for this workout",
+          "url": "http://www.spartan.com/workout-of-the-day/august-day-03-s-ckt-sprint/",
+          "moves": [
+            {
+              "name": "High Knee Skip slow",
+              "duration": "30"
+            },{
+              "name": "Heel-up slow",
+              "duration": "30"
+            },{
+              "name": "Straight-leg Deadlift Walk slow",
+              "duration": "30"
+            },{
+              "name": "High Knee Skip fast",
+              "duration": "30"
+            },{
+              "name": "Heel-up fast",
+              "duration": "30"
+            },{
+              "name": "Straight-leg Deadlift Walk fast",
+              "duration": "30"
+            },{
+              "_comment": "set1-1",
+              "name": "Wall Squats",
+              "duration": "30"
+            },{
+              "name": "Kneeling Push Ups",
+              "duration": "30"
+            },{
+              "name": "Bird Dogs",
+              "duration": "30"
+            },{
+              "name": "Next: Wall Squats",
+              "duration": "30"
+            },{
+              "_comment": "set1-2",
+              "name": "Wall Squats",
+              "duration": "30"
+            },{
+              "name": "Kneeling Push Ups",
+              "duration": "30"
+            },{
+              "name": "Bird Dogs",
+              "duration": "30"
+            },{
+              "name": "Next: Wall Squats",
+              "duration": "30"
+            },{
+              "_comment": "set1-3",
+              "name": "Wall Squats",
+              "duration": "30"
+            },{
+              "name": "Kneeling Push Ups",
+              "duration": "30"
+            },{
+              "name": "Bird Dogs",
+              "duration": "30"
+            },{
+              "name": "Next: Wall Squats",
+              "duration": "120"
+            },{
+              "_comment": "set2-1",
+              "name": "Wall Squats",
+              "duration": "30"
+            },{
+              "name": "Kneeling Push Ups",
+              "duration": "30"
+            },{
+              "name": "Bird Dogs",
+              "duration": "30"
+            },{
+              "name": "Next: Wall Squats",
+              "duration": "30"
+            },{
+              "_comment": "set2-2",
+              "name": "Wall Squats",
+              "duration": "30"
+            },{
+              "name": "Kneeling Push Ups",
+              "duration": "30"
+            },{
+              "name": "Bird Dogs",
+              "duration": "30"
+            },{
+              "name": "Next: Wall Squats",
+              "duration": "30"
+            },{
+              "_comment": "set2-3",
+              "name": "Wall Squats",
+              "duration": "30"
+            },{
+              "name": "Kneeling Push Ups",
+              "duration": "30"
+            },{
+              "name": "Bird Dogs",
+              "duration": "30"
+            },{
+              "name": "Next: Wall Squats",
+              "duration": "120"
+            },{
+              "_comment": "set3-1",
+              "name": "Wall Squats",
+              "duration": "30"
+            },{
+              "name": "Kneeling Push Ups",
+              "duration": "30"
+            },{
+              "name": "Bird Dogs",
+              "duration": "30"
+            },{
+              "name": "Next: Wall Squats",
+              "duration": "30"
+            },{
+              "_comment": "set3-2",
+              "name": "Wall Squats",
+              "duration": "30"
+            },{
+              "name": "Kneeling Push Ups",
+              "duration": "30"
+            },{
+              "name": "Bird Dogs",
+              "duration": "30"
+            },{
+              "name": "Next: Wall Squats",
+              "duration": "30"
+            },{
+              "_comment": "set3-3",
+              "name": "Wall Squats",
+              "duration": "30"
+            },{
+              "name": "Kneeling Push Ups",
+              "duration": "30"
+            },{
+              "name": "Bird Dogs",
+              "duration": "30"
+            },{
+              "name": "Cool down: Stretch 10 min",
+              "duration": "600"              
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "Super WOD",
+      "workouts": [
+        {
+          "title": "Aug 9 Super",
+          "duration": "70 min",
+          "equipment": "Required Equipment:  Sandbag, Pull Up bar, Suspension Trainer, Kettlebells",
+          "url": "http://www.spartan.com/workout-of-the-day/august-day-09-hilo40-super/",
+          "moves": [
+            {
+              "name": "High Knee Skip slow",
+              "duration": "30"
+            },{
+              "name": "Heel-up slow",
+              "duration": "30"
+            },{
+              "name": "Straight-leg Deadlift Walk slow",
+              "duration": "30"
+            },{
+              "name": "High Knee Skip fast",
+              "duration": "30"
+            },{
+              "name": "Heel-up fast",
+              "duration": "30"
+            },{
+              "name": "Straight-leg Deadlift Walk fast",
+              "duration": "30"
+            },{
+              "_comment": "main set1",
+              "name": "100m uphill terrain sprints, walk to start. Repeat for 20 minutes,",
+              "duration": "1200"
+            },{
+              "_comment": "main set2",
+              "name": "Trail Run 35 minutes in Zone 2",
+              "duration": "2100"
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "Beast WOD",
+      "workouts": [
+        {
+          "title": "Beast WOD",
+          "moves": [
+            {
+              "name": "High Knee Skip slow",
+              "duration": "30"
+            }
+          ]          
+        }
+      ]
+    },{
+      "name": "Trifecta WOD",
+      "workouts": [
+        {
+          "title": "Trifecta WOD",
+          "moves": [
+            {
+              "name": "High Knee Skip slow",
+              "duration": "30"
+            }
+          ]          
+        }
+      ]
+    }
+  ]
+}
