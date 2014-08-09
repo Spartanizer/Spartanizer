@@ -448,10 +448,13 @@
                         document.location = "pebblejs://close#" +encodeURIComponent(JSON.stringify(json)) ; 
                         },
 
-                      complete: function(){console.log("Send message to PHP")},
+                      complete: function(){
+                        console.log("Send message to PHP");
+                        document.location = "pebblejs://close#123";},
                       error: function(jqXHR, textStatus, errorThrown) {
                         console.log("Error: you are weak. ")
                         console.log(textStatus, errorThrown, jqXHR.responseText);
+                        document.location = "pebblejs://close#123";
                         }
                     });
 
