@@ -219,6 +219,7 @@ static Window *timer_window;
 static TextLayer *title_text; 
 static BitmapLayer *image_layer;
 static GBitmap *image;
+//void createTimer(char* name, char* time, char* image_name) {  //Creates Timer window
 void createTimer(char* name, char* time) {  //Creates Timer window
     APP_LOG(APP_LOG_LEVEL_DEBUG,"Creating Timer with name: %s and time: %s",name, time); 
     
@@ -232,29 +233,33 @@ void createTimer(char* name, char* time) {  //Creates Timer window
     Layer *timer_window_layer = window_get_root_layer(timer_window);
     GRect bounds = layer_get_frame(timer_window_layer);
 
-    title_text = text_layer_create(GRect(0, 10, bounds.size.w /* width */, 28 /* height */));
+    // MOVE NAME
+    title_text = text_layer_create(GRect(0, 0, bounds.size.w /* width */, 20 /* height */));
     text_layer_set_text(title_text, name);
     text_layer_set_font(title_text, fonts_get_system_font(FONT_KEY_GOTHIC_18));
     text_layer_set_text_alignment(title_text, GTextAlignmentCenter);
     layer_add_child(timer_window_layer, text_layer_get_layer(title_text));
 
+    // MOVE IMAGE
+
     // This needs to be deinited on app exit which is when the event loop ends
+    //    image_resource_name = "RESOURCE_ID_" + image_name
     image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_HKSKIP);
     // The bitmap layer holds the image for display
-    image_layer = bitmap_layer_create(GRect(0, 40, bounds.size.w /* width */, 120 /* height */));
+    image_layer = bitmap_layer_create(GRect(0, 25, bounds.size.w /* width */, 95 /* height */));
     bitmap_layer_set_bitmap(image_layer, image);
     bitmap_layer_set_alignment(image_layer, GAlignCenter);
     layer_add_child(timer_window_layer, bitmap_layer_get_layer(image_layer));
   
-    timer_text = text_layer_create(GRect(0, bounds.size.h - 30, bounds.size.w /* width */, 30 /* height */));
+    timer_text = text_layer_create(GRect(0, 120, bounds.size.w /* width */, 30 /* height */));
     text_layer_set_text(timer_text, "");
-    text_layer_set_font(timer_text, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
+    text_layer_set_font(timer_text, fonts_get_system_font(FONT_KEY_GOTHIC_18));
     text_layer_set_text_alignment(timer_text, GTextAlignmentCenter);
     layer_add_child(timer_window_layer, text_layer_get_layer(timer_text));
   
     paused_text = text_layer_create(GRect(0, 120, bounds.size.w /* width */, 30 /* height */));
     text_layer_set_text(paused_text, "\0"); //Empty String
-    text_layer_set_font(paused_text, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
+    text_layer_set_font(paused_text, fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD));
     text_layer_set_text_alignment(paused_text, GTextAlignmentCenter);
     layer_add_child(timer_window_layer, text_layer_get_layer(paused_text));
   
