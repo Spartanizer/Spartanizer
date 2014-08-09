@@ -238,13 +238,12 @@ void createTimer(char* name, char* time) {  //Creates Timer window
     layer_add_child(timer_window_layer, text_layer_get_layer(title_text));
 
     // This needs to be deinited on app exit which is when the event loop ends
-    image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_HKSKIP);
-
-    // The bitmap layer holds the image for display
-    image_layer = bitmap_layer_create(GRect(0, 10, bounds.size.w /* width */, 28 /* height */));
-    bitmap_layer_set_bitmap(image_layer, image);
-    bitmap_layer_set_alignment(image_layer, GAlignCenter);
-    layer_add_child(timer_window_layer, bitmap_layer_get_layer(image_layer));
+    image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_HKSKIP);
+    // The bitmap layer holds the image for display
+    image_layer = bitmap_layer_create(GRect(0, 10, bounds.size.w /* width */, 28 /* height */));
+    bitmap_layer_set_bitmap(image_layer, image);
+    bitmap_layer_set_alignment(image_layer, GAlignCenter);
+    layer_add_child(timer_window_layer, bitmap_layer_get_layer(image_layer));
   
     timer_text = text_layer_create(GRect(0, 60, bounds.size.w /* width */, 30 /* height */));
     text_layer_set_text(timer_text, "");
