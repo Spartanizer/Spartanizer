@@ -1,0 +1,52 @@
+{
+  "workouts": [
+    {
+      "title": "Sprint WOD",
+      "moves": [
+        [
+          "Next: Warm-up",
+          5
+        ],[
+          "Warm-up: High Knee Skip slow",
+          30, "hkskip.png", "This exercise is gentle skipping to warm-up the hip muscles. The focus is on rhythmic movement not height or distance. Swing arms opposite the legs. If the left knee is forward the, left arm is back."
+        ],[
+          "Warm-up: High Knee Skip fast",
+          30, "hkskip.png", "This exercise is gentle skipping to warm-up the hip muscles. The focus is on rhythmic movement not height or distance. Swing arms opposite the legs. If the left knee is forward the, left arm is back."
+        ],[
+          "Next: Uphill terrain sprints",
+          5
+        ],[
+          "Uphill terrain sprints, walk to start",
+          120, "utsprint.png"
+        ],[
+          "Next: Trail run for 30 min, zone 2 / medium",
+          5
+        ],[
+          "Trail run for 30 min, zone 2 / medium",
+          120, "trailrun.png", "Zone 2: high intensity, but it doesn't completely destroy you."
+        ],[
+          "Next: Cool-down",
+          5
+        ],[
+          "Cool-down: Squat stretch",
+          30, "squattstretch.png", "Keeping your feet flat on, simply squat down so that your butt nearly touches to floor. Do 6-8 repetitions of this, pausing for 2 seconds at the bottom of the squat, attempting to maintain a tall spine"
+        ],[
+          "Cool-down: Standing quad stretch",
+          30, "standquadstretch.png", "Kick a foot up behind you and grab your toes with your hand. Try and point your knee straight to the ground. Stretch both legs a 3-5 times."
+        ],[
+          "Spartan Success! 3-day streak",
+          10, "successimg.png"
+        ]
+      ]
+    },
+    {
+      "title": "Super WOD",
+      "moves": [
+        [
+          "Warm-up: High Knee Skip slow",
+          30
+        ]
+      ]
+    }
+  ]
+}
