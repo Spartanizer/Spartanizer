@@ -3,8 +3,8 @@
     "capabilities": [
         "configurable"
     ],
-    "companyName": "Fernando Trujano",
-    "longName": "Custom Workout Timer",
+    "companyName": "Spartanizer",
+    "longName": "Spartanizer Workouts",
     "projectType": "native",
     "resources": {
         "media": [
@@ -16,7 +16,7 @@
             }
         ]
     },
-    "shortName": "Workout Timer",
+    "shortName": "Spartanizer",
     "uuid": "2add7054-08bc-4dda-b4d8-28f22f3d7ec2",
     "versionCode": 1,
     "versionLabel": "2.0",
