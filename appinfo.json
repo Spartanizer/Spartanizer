@@ -15,6 +15,16 @@
                 "type": "png"
             },
             {
+                "file": "images/splash.png",
+                "name": "IMAGE_SPLASH",
+                "type": "png"
+            },
+            {
+                "file": "images/success.png",
+                "name": "IMAGE_SUCCESS",
+                "type": "png"
+            },
+            {
                 "file": "images/hkskip.png",
                 "name": "IMAGE_HKSKIP",
                 "type": "png"
