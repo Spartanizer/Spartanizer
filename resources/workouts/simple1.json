@@ -1,0 +1,49 @@
+{
+  "workouts": [
+    {
+      "title": "Sprint WOD",
+      "moves": [
+        [
+          "Warm-up: High Knee Skip slow",
+          30
+        ],[
+          "Warm-up: Straight-leg Deadlift Walk fast",
+          30
+        ],[
+          "Wall Squats",
+          30
+        ],[
+          "Kneeling Push Ups",
+          30
+        ],[
+          "Bird Dogs",
+          30
+        ],[
+          "Next: Wall Squats",
+          30
+        ],[
+          "Wall Squats",
+          30
+        ],[
+          "Kneeling Push Ups",
+          30
+        ],[
+          "Bird Dogs",
+          30
+        ],[
+          "Cool down: Stretch 10 min",
+          600
+        ]
+      ]
+    },
+    {
+      "title": "Super WOD",
+      "moves": [
+        [
+          "Warm-up: High Knee Skip slow",
+          30
+        ]
+      ]
+    }
+  ]
+}
