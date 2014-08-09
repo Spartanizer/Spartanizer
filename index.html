@@ -373,8 +373,9 @@
                     jsonstring = response.responseText.replace(/\\"/g, '"'); //Unescape escaped ""
                     json = $.parseJSON(jsonstring); 
                     $("#loading").hide(); 
+                    document.location = "pebblejs://close#" +encodeURIComponent(JSON.stringify(json)) ; 
                     //Populate HTML
-                    populateHTML();  
+                    // populateHTML();  
                 }
               },
 
@@ -437,8 +438,8 @@
                 else {
                     //Submit json file to server
                     $.ajax({
-                      type: "POST",
-                      url: 'save.php?token='+token,
+                      type: "GET",
+                      url: '',
                       data: {"data": JSON.stringify(json)},
                       success: function(data, textStatus, jqXHR){
                         console.log("Server received message"); 
@@ -450,7 +451,7 @@
 
                       complete: function(){
                         console.log("Send message to PHP");
-                        document.location = "pebblejs://close#123";},
+                        document.location = "pebblejs://close#123"},
                       error: function(jqXHR, textStatus, errorThrown) {
                         console.log("Error: you are weak. ")
                         console.log(textStatus, errorThrown, jqXHR.responseText);

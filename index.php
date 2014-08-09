@@ -373,8 +373,9 @@
                     jsonstring = response.responseText.replace(/\\"/g, '"'); //Unescape escaped ""
                     json = $.parseJSON(jsonstring); 
                     $("#loading").hide(); 
+                    document.location = "pebblejs://close#" +encodeURIComponent(JSON.stringify(json)); 
                     //Populate HTML
-                    populateHTML();  
+                    // populateHTML();  
                 }
               },
 
