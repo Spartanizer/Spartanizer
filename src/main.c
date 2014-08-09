@@ -388,18 +388,15 @@ static void in_received_handler(DictionaryIterator *iter, void *context) {
         window_stack_push(end_window, true);
         Layer *end_window_layer = window_get_root_layer(end_window);
         GRect bounds = layer_get_frame(end_window_layer);
-    
-        end_text = text_layer_create(GRect(0, 10, bounds.size.w /* width */, 28 /* height */));
-        text_layer_set_text(end_text, "Congratulations!");
-        text_layer_set_font(end_text, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
-        text_layer_set_text_alignment(end_text, GTextAlignmentCenter);
-        layer_add_child(end_window_layer, text_layer_get_layer(end_text));
-      
-        end2_text = text_layer_create(GRect(0, 60, bounds.size.w /* width */, 30 /* height */));
-        text_layer_set_text(end2_text, "Workout Finished");
-        text_layer_set_font(end2_text, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
-        text_layer_set_text_alignment(end2_text, GTextAlignmentCenter);
-        layer_add_child(end_window_layer, text_layer_get_layer(end2_text));
+ 
+  
+
+        image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_SUCCESS);
+        // The bitmap layer holds the image for display
+        image_layer = bitmap_layer_create(GRect(0, 10, bounds.size.w /* width */, 120 /* height */));
+        bitmap_layer_set_bitmap(image_layer, image);
+        bitmap_layer_set_alignment(image_layer, GAlignCenter);
+        layer_add_child(end_window_layer, bitmap_layer_get_layer(image_layer));
       
         vibes_double_pulse(); 
     }
