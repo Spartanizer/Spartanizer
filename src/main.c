@@ -283,9 +283,9 @@ void splash_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_frame(window_layer);
 
-  image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_HKSKIP);
+  image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_SPLASH);
   // The bitmap layer holds the image for display
-  image_layer = bitmap_layer_create(GRect(0, 50, bounds.size.w /* width */, 120 /* height */));
+  image_layer = bitmap_layer_create(GRect(0, 10, bounds.size.w /* width */, 120 /* height */));
   bitmap_layer_set_bitmap(image_layer, image);
   bitmap_layer_set_alignment(image_layer, GAlignCenter);
   layer_add_child(window_layer, bitmap_layer_get_layer(image_layer));
