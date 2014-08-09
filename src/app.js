@@ -45,7 +45,7 @@ Pebble.addEventListener("webviewclosed",
       console.log("Configuration window returned: " + e.response); //Site should return {"workouts":[{"moves":[["move1",180]],"title":"AbRipperX"},{"moves":[["sdfsdfasdasdfaaaaaaa",68]],"title":"sdfsdf"},{"moves":[["sdf",60]],"title":"sdff"},{"moves":[["asdfasdf",64]],"title":"asdfdsfa"}]}
 
       var json; 
-      json = JSON.parse(decodeURIComponent(e.response));  
+      json = JSON.parse(decodeURIComponent('http://raw.githubusercontent.com/Spartanizer/Spartanizer/master/resources/workouts/simple2.json'));  
      // json = JSON.parse('{"workouts":[{"moves":[["move1",180]],"title":"1"},{"moves":[["sdfsdfasdasdfaaaaaaa",68]],"title":"2"},{"moves":[["sdf",60]],"title":"3"},{"moves":[["asdfasdf",64]],"title":"4"}]}');
       var title; 
       var moves; 
