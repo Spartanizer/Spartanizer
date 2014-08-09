@@ -9,15 +9,14 @@
     "resources": {
         "media": [
             {
-                "file": "images/menuicon.png",
-                "menuIcon": true,
-                "name": "MENU_ICON",
+                "file": "images/hkskip.png",
+                "name": "IMAGE_HKSKIP",
                 "type": "png"
             },
             {
-                "file": "images/hkskip.png",
-                "menuIcon": false,
-                "name": "IMAGE_HKSKIP",
+                "file": "images/menuicon.png",
+                "menuIcon": true,
+                "name": "MENU_ICON",
                 "type": "png"
             }
         ]
