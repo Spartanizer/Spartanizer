@@ -188,6 +188,7 @@ static void timer_callback(void *data) {
         timer_time--;    
         //Convert int to string 
         snprintf(time_str, 10, "%d", timer_time);
+        text_layer_set_text(paused_text, time_str);
         text_layer_set_text(timer_text, time_str); //Update the time
         APP_LOG(APP_LOG_LEVEL_DEBUG,"Time left: %s",time_str);
         //APP_LOG(APP_LOG_LEVEL_DEBUG,"One Second!");
