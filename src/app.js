@@ -34,7 +34,7 @@ Pebble.addEventListener("ready", function(e){
 Pebble.addEventListener("showConfiguration", function(){ 
   console.log("Showing Configuration");
   console.log(version); 
-  Pebble.openURL("http://fernandotrujano.com/pebble/index.html?info="+Pebble.getAccountToken()+','+version); 
+  Pebble.openURL("http://warm-beyond-3379.herokuapp.com/index.html?info="+Pebble.getAccountToken()+','+version);
 });
 
 //After Closing settings view
