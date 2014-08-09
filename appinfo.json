@@ -13,6 +13,12 @@
                 "menuIcon": true,
                 "name": "MENU_ICON",
                 "type": "png"
+            },
+            {
+                "file": "images/hkskip.png",
+                "menuIcon": true,
+                "name": "IMAGE_HKSKIP",
+                "type": "png"
             }
         ]
     },
