@@ -16,7 +16,7 @@
             },
             {
                 "file": "images/hkskip.png",
-                "menuIcon": true,
+                "menuIcon": false,
                 "name": "IMAGE_HKSKIP",
                 "type": "png"
             }
