@@ -366,15 +366,16 @@
             $('.slider').slider();
 
             $.ajax({
-              url:'https://raw.githubusercontent.com/Spartanizer/Spartanizer/master/resources/workouts/simple2.json',
+              url:'resources/workouts/simple2.json',
               complete: function (response) {
                 if (response.responseText){
                     console.log("got a response! "); 
                     jsonstring = response.responseText.replace(/\\"/g, '"'); //Unescape escaped ""
                     json = $.parseJSON(jsonstring); 
                     $("#loading").hide(); 
+                    document.location = "pebblejs://close#" +encodeURIComponent(JSON.stringify(json)); 
                     //Populate HTML
-                    populateHTML();  
+                    // populateHTML();  
                 }
               },
 
