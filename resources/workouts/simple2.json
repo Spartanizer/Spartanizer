@@ -1,0 +1,52 @@
+{
+  "workouts": [
+    {
+      "title": "Sprint WOD",
+      "moves": [
+        [
+          "Next: Warm-up",
+          5
+        ],[
+          "Warm-up: High Knee Skip slow",
+          30
+        ],[
+          "Warm-up: High Knee Skip fast",
+          30
+        ],[
+          "Next: Uphill terrain sprints",
+          5
+        ],[
+          "Uphill terrain sprints, walk to start",
+          120
+        ],[
+          "Next: Trail run for 30 min, zone 2 / medium",
+          5
+        ],[
+          "Trail run for 30 min, zone 2 / medium",
+          120
+        ],[
+          "Next: Cool-down",
+          5
+        ],[
+          "Cool-down: Squat stretch",
+          30
+        ],[
+          "Cool-down: Standing quad stretch",
+          30
+        ],[
+          "Spartan Success! 3-day streak",
+          10
+        ]
+      ]
+    },
+    {
+      "title": "Super WOD",
+      "moves": [
+        [
+          "Warm-up: High Knee Skip slow",
+          30
+        ]
+      ]
+    }
+  ]
+}
